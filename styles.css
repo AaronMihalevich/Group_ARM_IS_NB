@@ -3,18 +3,21 @@
 
 
 
-/* ----------------------Aaron Mihalevich------------------------- */
+/* ----------------------Aaron Mihalevich (navigation)------------------------- */
 .navigation{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: green;
+  background-color: grey;
   padding: 10px 0px;
+  position: relative;
 }
 
 .navigation img{
   width: 200px;
   height: auto;
+  position: absolute;
+  top: 0px;
 }
 
 .navigation a{
@@ -23,5 +26,6 @@
 }
 
 .navigation a:hover{
+  text-decoration: none;
   color: blue;
 }
