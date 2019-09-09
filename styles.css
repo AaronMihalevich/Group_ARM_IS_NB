@@ -37,3 +37,6 @@
 .divmenu{
   text-align: center;
 }
+body{
+  background-image: linear-gradient(#caccca,grey);
+}
