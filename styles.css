@@ -1,0 +1,27 @@
+/* CIS-131-101 Week 5 Group assign
+09/09/2019 */
+
+
+
+/* ----------------------Aaron Mihalevich------------------------- */
+.navigation{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: green;
+  padding: 10px 0px;
+}
+
+.navigation img{
+  width: 200px;
+  height: auto;
+}
+
+.navigation a{
+  font-size: 25px;
+  color: white;
+}
+
+.navigation a:hover{
+  color: blue;
+}
