@@ -12,11 +12,11 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputName4">Name</label>
-            <input type="name" class="form-control" id="inputname4" placeholder="Name">
+            <input type="text" class="form-control" id="inputname4" placeholder="Name">
           </div>
           <div class="form-group col-md-6">
             <label for="inputPhone4">Phone-Number</label>
-            <input type="phone" class="form-control" id="inputPhone4" placeholder="phone">
+            <input type="text" class="form-control" id="inputPhone4" placeholder="phone">
           </div>
         </div>
         <div class="form-group">
@@ -29,27 +29,34 @@
             <input type="text" class="form-control" id="inputCity">
           </div>
           <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
+            <label for="numberOfPeople">Number of Guests</label>
+            <select id="numberOfPeople" name="Number of Guests" class="form-control">
+              <script>
+                  for (var i = 1; i <= 20;  i++){
+                        document.write(`<option value=${i}>${i}</option>`)
+                    }
+              </script>
             </select>
           </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
+          <div class="form-group col-md-4">
+                <label for="time">Time</label>
+                <select id="time" name="Time" class="form-control">
+                  <script>
+                      
+                  </script>
+                </select>
+              </div>
         <div class="form-group">
           <label for="inputrequest">Special Request</label>
           <input type="text" class="form-control" id="inputrequest" placeholder="Anything we should know about?">
         </div>
         <button type="submit" class="btn btn-primary">Make Reservation</button>
       </form>
+      <form method="get">
+      <iframe src="https://calendar.google.com/calendar/embed?src=ssomeone869%40gmail.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </form>
     
-    
-    
-    
+    <script src="scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
