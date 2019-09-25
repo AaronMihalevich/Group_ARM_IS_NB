@@ -9,3 +9,10 @@ times.forEach(function(el){
     time.innerHTML = el;
     document.getElementById("time").appendChild(time);
 });
+
+months.forEach(function(el){
+    var month = document.createElement("option");
+    month.value = el;
+    month.innerHTML = el;
+    document.getElementById("month").appendChild(month);
+});
