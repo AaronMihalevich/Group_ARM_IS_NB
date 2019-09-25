@@ -16,3 +16,12 @@ months.forEach(function(el){
     month.innerHTML = el;
     document.getElementById("month").appendChild(month);
 });
+
+if (document.getElementById("month").innerHTML == months[1]){
+    days28.forEach(function(el){
+        var days = document.createElement("option");
+        days.value = el;
+        days.innerHTML = el;
+        document.getElementById("days").appendChild(days);
+    });
+}
